@@ -1,5 +1,28 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        int resultado = suma (10, 20, 30);
+
+        System.out.println("el resultado de la suma es " + resultado);
+
+        Coche miCoche = new Coche ();
+        miCoche.puertasAdd();
+
+        System.out.println("Puertas del coche " + miCoche.puertas);
+
+
     }
+
+    public static int suma (int a, int b, int c){
+        return  a + b + c;
+
+    }
+
+
+    public static class Coche {
+        int puertas = 0;
+        public void puertasAdd(){
+           this.puertas ++;
+        }
+    }
+
 }
